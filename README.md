@@ -77,12 +77,12 @@ app.MapPut("/UpdateFilePDF/{fileName}", …).DisableAntiforgery();
 
 ## Скриншоты
 
-- ![](https://raw.githubusercontent.com/Neroimor/LibraryMinimalAPI/master/screenshots/Pasted%20image%2020250714110601.png)
-- ![](https://raw.githubusercontent.com/Neroimor/LibraryMinimalAPI/master/screenshots/Pasted%20image%2020250714110806.png)
-- ![](https://raw.githubusercontent.com/Neroimor/LibraryMinimalAPI/master/screenshots/Pasted%20image%2020250714110816.png)
-- ![](https://raw.githubusercontent.com/Neroimor/LibraryMinimalAPI/master/screenshots/Pasted%20image%2020250714111004.png)
-- ![](https://raw.githubusercontent.com/Neroimor/LibraryMinimalAPI/master/screenshots/Pasted%20image%2020250714111422.png)
-- ![](https://raw.githubusercontent.com/Neroimor/LibraryMinimalAPI/master/screenshots/Pasted%20image%2020250714111519.png)
-- ![](https://raw.githubusercontent.com/Neroimor/LibraryMinimalAPI/master/screenshots/Pasted%20image%2020250714111538.png)
+![](https://raw.githubusercontent.com/Neroimor/LibraryMinimalAPI/master/screenshots/Pasted%20image%2020250714110601.png)
+![](https://raw.githubusercontent.com/Neroimor/LibraryMinimalAPI/master/screenshots/Pasted%20image%2020250714110806.png)
+![](https://raw.githubusercontent.com/Neroimor/LibraryMinimalAPI/master/screenshots/Pasted%20image%2020250714110816.png)
+![](https://raw.githubusercontent.com/Neroimor/LibraryMinimalAPI/master/screenshots/Pasted%20image%2020250714111004.png)
+![](https://raw.githubusercontent.com/Neroimor/LibraryMinimalAPI/master/screenshots/Pasted%20image%2020250714111422.png)
+![](https://raw.githubusercontent.com/Neroimor/LibraryMinimalAPI/master/screenshots/Pasted%20image%2020250714111519.png)
+![](https://raw.githubusercontent.com/Neroimor/LibraryMinimalAPI/master/screenshots/Pasted%20image%2020250714111538.png)
 
 
