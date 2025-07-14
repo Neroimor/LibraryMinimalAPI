@@ -76,4 +76,4 @@ app.MapPut("/UpdateFilePDF/{fileName}", …).DisableAntiforgery();
 ```
 
 ## Скриншоты
-![Upload PDF](https://github.com/Neroimor/LibraryMinimalAPI/blob/master/screenshots/Pasted%20image%2020250714110601.png)
+
