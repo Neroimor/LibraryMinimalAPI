@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 
 
+
 var app = builder.Build();
 
 
@@ -37,7 +38,7 @@ app.MapPost("/AddedFilePDF", async ([FromForm] IFormFile file) =>
     await file.CopyToAsync(stream);
 
     return Results.Ok("Файл успешно загружен");
-});
+}).DisableAntiforgery();
 
 
 app.MapGet("/ReadListFiles", async () =>
@@ -82,15 +83,17 @@ app.MapPut("/UpdateFilePDF/{fileName}", async (string fileName, [FromForm] IForm
     if (!File.Exists(filePath))
         return Results.NotFound("Файл не найден");
 
-    using var stream = new FileStream(filePath, FileMode.Create, FileAccess.Write);
+    File.Delete(filePath);
+    filePath = Path.Combine("wwwroot", file.FileName);
+    using var stream = File.Create(filePath);
     await file.CopyToAsync(stream);
 
     return Results.Ok("Файл успешно обновлен");
-});
+}).DisableAntiforgery();
 
 
 
-app.MapDelete("/DeleteFilePDF/{fileName}", async (string fileName) =>
+app.MapDelete(" /{fileName}", async (string fileName) =>
 {
     if (string.IsNullOrEmpty(fileName))
         return Results.BadRequest("Имя файла не указано");
@@ -99,7 +102,7 @@ app.MapDelete("/DeleteFilePDF/{fileName}", async (string fileName) =>
         return Results.NotFound("Файл не найден");
     File.Delete(uploadPath);
     return Results.Ok("Файл успешно удален");
-});
+}).DisableAntiforgery();
 
 
 
